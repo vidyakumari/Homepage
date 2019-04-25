@@ -1,0 +1,26 @@
+.card {
+  height: 180px;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  background-color: azure;
+}
+.body{
+  background-color: beige;
+}
+.cborder{
+  border-right: 1px solid black;
+  height: 130px;
+}
+.foot{
+  width:100%;
+  text-align: center;
+  margin-bottom:0px;
+  color: white;
+  height: 50px;
+  background-color:black; 
+}
+
+.btn{
+  float: right;
+}
