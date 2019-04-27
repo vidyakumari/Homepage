@@ -1,5 +1,5 @@
 .card {
-  height: 180px;
+  height: 200px;
   padding: 5px;
   border-bottom: 1px solid black;
   margin-bottom: 10px;
@@ -10,7 +10,7 @@
 }
 .cborder{
   border-right: 1px solid black;
-  height: 130px;
+  height: 150px;
 }
 .foot{
   width:100%;

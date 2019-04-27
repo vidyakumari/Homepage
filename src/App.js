@@ -5,18 +5,33 @@ import Body from './Components/body';
 import Footer from './Components/footer';
 import Filter from './Components/filter';
 import jobs from './jobs';
-//import './Components/footer';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="body">
-      <Header/>
-      <Filter/>
-      <Body jobsdata={jobs}/>
-      <Footer/>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      data: jobs
+    }
+  }
+
+  filterdata = (filterjobs) => {
+    this.setState({
+      data: filterjobs
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header></Header>
+        <Filter FilteredData={this.filterdata} job_filter={jobs}></Filter>
+        <Body jobsdata={this.state.data}></Body>
+        <Footer></Footer>
+      </div>
+    );
+  }
 }
 
 export default App;
+
